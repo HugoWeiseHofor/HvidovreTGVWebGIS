@@ -232,14 +232,14 @@ var lyr_IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_1
                 style: style_IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_14,
                 popuplayertitle: 'Indledende skadesberegninger - Gennemsnitlig skadesomkostninger før tiltag [DKK/år',
                 interactive: true,
-    title: 'Indledende skadesberegninger - Gennemsnitlig skadesomkostninger før tiltag [DKK/år<br />\
+    title: 'Indledende skadesberegninger - Gennemsnitlig skadesomkostninger før tiltag [DKK/år]<br />\
     <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_14_0.png" /> 0 - 20000<br />\
     <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_14_1.png" /> 20000 - 40000<br />\
     <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_14_2.png" /> 40000 - 60000<br />\
     <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_14_3.png" /> 60000 - 80000<br />\
     <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_14_4.png" /> 80000 - 100000<br />\
     <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_14_5.png" /> 100000 - 120000<br />\
-    <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_14_6.png" /> 120000 - 47624000<br />' });
+    <img src="styles/legend/IndledendeskadesberegningerGennemsnitligskadesomkostningerfrtiltagDKKr_14_6.png" /> 120000 +<br />' });
 var format_Ser100mbuffer_15 = new ol.format.GeoJSON();
 var features_Ser100mbuffer_15 = format_Ser100mbuffer_15.readFeatures(json_Ser100mbuffer, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
@@ -774,4 +774,5 @@ lyr_Spildevandskloakeret.set('fieldLabels', {'fid': 'no label', 'doklink': 'no l
 lyr_Hvidovre.set('fieldLabels', {'fid': 'no label', 'navn': 'no label', });
 lyr_Hvidovre.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
+
 });
